@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "來聊聊窮人。"
+title: "來聊聊窮人"
 date: 2026-10-01
 ---
 
