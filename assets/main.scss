@@ -1,0 +1,39 @@
+---
+---
+
+@import "minima";
+
+/* 整體字體 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC",
+               "PingFang TC", "Microsoft JhengHei", sans-serif;
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+/* 文章不要太寬 */
+.wrapper {
+  max-width: 760px;
+}
+
+/* 文章正文 */
+.post-content {
+  font-size: 18px;
+  line-height: 2;
+}
+
+/* 段落之間多留一點空間 */
+.post-content p {
+  margin-bottom: 1.5em;
+}
+
+/* 標題 */
+.post-title {
+  font-size: 2.2rem;
+  line-height: 1.4;
+}
+
+/* 首頁文章標題 */
+.post-link {
+  font-size: 1.4rem;
+}
