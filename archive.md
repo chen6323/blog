@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 文章彙整
+title: Posts
 permalink: /archive/
 ---
 
