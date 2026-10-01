@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list" id="post-list">
+    {% for post in site.posts %}
+      <li class="post-item"
+          data-month="{{ post.date | date: '%Y-%m' }}">
+
+        <span class="post-meta">
+          {{ post.date | date: "%b %-d, %Y" }}
+        </span>
+
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="month-filter">
+    <label for="month-select">查看月份：</label>
+
+    <select id="month-select">
+      <option value="all">全部</option>
+
+      {% assign months = site.posts
+        | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
+
+      {% for month in months %}
+        <option value="{{ month.name }}">
+          {{ month.name }}
+        </option>
+      {% endfor %}
+    </select>
+  </div>
+
+</div>
+
+<script>
+document.getElementById("month-select").addEventListener("change", function () {
+  const selectedMonth = this.value;
+  const posts = document.querySelectorAll(".post-item");
+
+  posts.forEach(function (post) {
+    if (
+      selectedMonth === "all" ||
+      post.dataset.month === selectedMonth
+    ) {
+      post.style.display = "";
+    } else {
+      post.style.display = "none";
+    }
+  });
+});
+</script>
