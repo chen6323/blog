@@ -54,3 +54,16 @@ body {
 .site-nav {
   display: none;
 }
+
+.month-filter {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.month-filter select {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.95rem;
+}
