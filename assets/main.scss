@@ -83,3 +83,88 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+/* ===== Homepage polish ===== */
+
+.home {
+  padding-top: 2rem;
+}
+
+/* Posts 標題 */
+.home .page-heading {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+/* 文章列表 */
+.post-list {
+  margin-left: 0;
+}
+
+.post-list > li {
+  margin-bottom: 2.6rem;
+}
+
+/* 日期 */
+.post-meta {
+  color: #999;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+
+/* 首頁文章標題 */
+.post-link {
+  font-size: 1.45rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #222 !important;
+  text-decoration: none;
+}
+
+.post-link:hover {
+  color: #666 !important;
+  text-decoration: none;
+}
+
+/* 年月選單區 */
+.month-filter {
+  margin: 1rem 0 2.5rem 0;
+  padding: 0;
+  border-top: none;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+/* 下拉選單 */
+.month-filter select {
+  margin-left: 0;
+  padding: 0.45rem 2rem 0.45rem 0.75rem;
+  font-size: 0.95rem;
+  color: #444;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* 整體內容寬度 */
+.wrapper {
+  max-width: 720px;
+}
+
+/* Header 稍微淡一點 */
+.site-title,
+.site-title:visited {
+  color: #333;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+/* 去掉太強烈的橫線感 */
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid #eee;
+}
